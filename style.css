@@ -413,7 +413,7 @@ nav a:hover::after {
   display: flex;
   flex-direction: column;
   max-width: 50rem !important;
-  height: 40rem;
+  height: 45rem;
   box-shadow: #0000001a;
   background-color: #121212;
   border-radius: 1rem;
