@@ -1,7 +1,95 @@
+/* Tablet (601px to 992px) */
+@media (600px < width <= 992px) {
+  /* Global safe text wrapping to wrap the text by word and prevent writing it on two lines */
+  /* Global safe text wrapping to wrap the text by word and prevent writing it on two lines */
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  a,
+  span,
+  div {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  .about {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  .about-para,
+  .about-contact-para,
+  .about-me-para {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .about-img {
+    margin-right: 40px;
+  }
+
+  .about-me-sec {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .experience-card-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .experience-card {
+    width: 90%;
+  }
+
+  .project-card-container {
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact-sec {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 /* === Responsive Styles === */
 
 /* Mobile (<= 600px) */
 @media (max-width: 600px) {
+  /* Global safe text wrapping to wrap the text by word and prevent writing it on two lines */
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  a,
+  span,
+  div {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
   .main-nav-layout {
     flex-direction: column;
     align-items: flex-start;
@@ -89,54 +177,5 @@
   .contact-para {
     font-size: 32px;
     text-align: center;
-  }
-}
-
-/* Tablet (601px to 992px) */
-@media (max-width: 992px) {
-  .about {
-    width: 100%;
-    margin-left: 40px;
-  }
-
-  .about-para,
-  .about-contact-para,
-  .about-me-para {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .about-img {
-    margin-right: 40px;
-  }
-
-  .about-me-sec {
-    flex-direction: column;
-    align-items: center;
-    margin: 50px;
-  }
-
-  .experience-card-container {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
-
-  .experience-card {
-    width: 90%;
-  }
-
-  .project-card-container {
-    justify-content: center;
-  }
-
-  .project-card {
-    width: 90%;
-    height: auto;
-  }
-
-  .contact-sec {
-    flex-direction: column;
-    align-items: stretch;
   }
 }

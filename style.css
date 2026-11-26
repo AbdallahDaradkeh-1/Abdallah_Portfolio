@@ -14,6 +14,25 @@ html {
   font-size: 62.5%;
 }
 
+/* Global safe text wrapping to wrap the text by word and prevent writing it on two lines */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a,
+span,
+div {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
 body {
   background-color: rgb(26 32 44);
   color: #a0aec0;
@@ -243,6 +262,11 @@ nav a:hover::after {
   transform: scale(1.2) rotate(5deg); /* Bounce + slight rotation */
   color: #b388eb; /* Optional: Change color */
 }
+
+.word {
+  display: inline-block;
+}
+
 .about-para {
   max-width: 60rem;
   font-size: 2rem;
